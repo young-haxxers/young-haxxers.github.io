@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+</head>
+  <title>JS Login</title>
+ </head>
+ <body>
+  
+  <div class="container">
+   <h1>Enter your Details</h1>
+  <input type="user" class="user" id="user">
+   <input type="password" class="pword" id="pword">
+   <button onclick="login()">login</button>
+  </div>
+  <script>
+   function login() {
+     let user = document.getElementById("user").value;
+     if (user === "adminUser" and pword === "weakPassword123") {
+       document.cookie = "complete=true";
+       window.location.href = "/flag.html";
+     } else {
+       alert("didnt work");
+     }
+   }
+  </script>
+    </body>
+    
+</html>
