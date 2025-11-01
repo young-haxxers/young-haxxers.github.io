@@ -8,6 +8,6 @@
               node-version: '20'
           - name: Run script with secret
             env:
-              MY_SECRET_VARIABLE: ${{ secrets.API_KEY }}
+              MY_SECRET_VARIABLE: ${{ secrets.JS_INJECTION_FLAG }}
             run: |
               node js/injection/
