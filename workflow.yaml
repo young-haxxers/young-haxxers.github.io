@@ -10,4 +10,4 @@
             env:
               MY_SECRET_VARIABLE: ${{ secrets.JS_INJECTION_FLAG }}
             run: |
-              node js/injection/
+              node js/injection/flag.html
