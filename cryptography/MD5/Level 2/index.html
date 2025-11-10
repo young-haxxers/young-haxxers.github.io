@@ -1,4 +1,12 @@
 <html>
-	<div class="hash"></div>
-	<script src="script.js"></script>
+	<div id="hash"></div>
+	<script>
+    	document.getElementById("hash").innerHTML = "5e1492d0df025146eda64b9a7d189532";
+        function flag(hash) {
+        	if (hash = "coolhash") {
+            	document.cookie = "f1=true";
+            	document.getElementById("hash").innerHTML = "44a936d7fc4124470fa783555c295ffc";
+            }
+        }
+    </script>
 </html>
