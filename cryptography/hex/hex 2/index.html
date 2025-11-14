@@ -1,0 +1,26 @@
+<html>
+	<head>
+    <link rel="stylesheet" type="text/css" href="../../../styles.css">
+    <title>Hex Lv. 2</title>
+  </head>
+  <body>
+	<div id="hash"></div>
+	<script>
+    	document.getElementById("hash").innerHTML = "68 45 78 31 64 33 63 69 6d 61 6c 48 61 35 68";
+        function flag(hash) {
+        	if (hash == "hEx1d3cimalHa5h") {
+            	document.cookie = "f1=true";
+            	document.getElementById("hash").innerHTML = "48 34 53 48 6e 55 6d 62 33 72 54 77 30";
+            	console.log("you got the flag");
+        	} else if (hash == "H4SHnUmb3rTw0") {
+                document.cookie = "f2=true";
+                document.getElementById("hash").innerHTML = "67 30 4f 64 4a 6f 62";
+                console.log("congrats");
+        	} else if (hash == "g0OdJob" && document.cookie.includes("f1=true") && document.cookie.includes("f2=true")) {
+            	document.getElementById("hash").innerHTML = "66 6c 61 67 7b 48 65 78 5f 31 65 76 65 4c 5f 74 57 30 7d";
+            } else {
+                console.log("incorrect flag");
+            }
+        }
+    </script>
+</html>
