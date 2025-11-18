@@ -5,22 +5,5 @@
   </head>
   <body>
 	<div id="hash"></div>
-	<script>
-    	document.getElementById("hash").innerHTML = "5e1492d0df025146eda64b9a7d189532";
-        function flag(hash) {
-        	if (hash == "coolhash") {
-            	document.cookie = "f1=true";
-            	document.getElementById("hash").innerHTML = "44a936d7fc4124470fa783555c295ffc";
-            	console.log("you got the flag");
-        	} else if (hash == "nicejob") {
-                document.cookie = "f2=true";
-                document.getElementById("hash").innerHTML = "0db6030a824b2c5fa58f8642c99c5a12";
-                console.log("congrats");
-        	} else if (hash == "numberthree" && document.cookie.includes("f1=true") && document.cookie.includes("f2=true")) {
-            	document.getElementById("hash").innerHTML = "flag\{1v2_Md5-h4Sh3s\}";
-            } else {
-                console.log("incorrect flag");
-            }
-        }
-    </script>
+	<script src="script.js"></script>
 </html>
